@@ -17,14 +17,10 @@ custom-setup
     base        >= 4.18 && < 5,
     xcframework >= 0.1
 
-common warnings
-    ghc-options: -Wall
-
-library
-    import:           warnings
-    exposed-modules:  MyLib
-    -- other-modules:
-    -- other-extensions:
+foreign-library myexample
+    type: native-shared
+    options: standalone
+    other-modules:    MyLib
     build-depends:    base ^>=4.20.0.0
     hs-source-dirs:   src
     default-language: GHC2021
