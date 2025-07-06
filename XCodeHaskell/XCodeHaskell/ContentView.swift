@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import Haskell.Foreign.Exports
 
 struct ContentView: View {
+    let result = doSomething()
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("\(result)")
         }
         .padding()
     }
