@@ -6,8 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C32F976A2E19FA9B00EE6091 /* MyHaskellLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F97692E19FA9B00EE6091 /* MyHaskellLib.xcframework */; };
+		C32F976B2E19FA9B00EE6091 /* MyHaskellLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C32F97692E19FA9B00EE6091 /* MyHaskellLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C32F976C2E19FA9B00EE6091 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C32F976B2E19FA9B00EE6091 /* MyHaskellLib.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C32F97592E19FA5500EE6091 /* XCodeHaskell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeHaskell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32F97692E19FA9B00EE6091 /* MyHaskellLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MyHaskellLib.xcframework; path = ../haskell/_build/MyHaskellLib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32F976A2E19FA9B00EE6091 /* MyHaskellLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				C32F975B2E19FA5500EE6091 /* XCodeHaskell */,
+				C32F97682E19FA9B00EE6091 /* Frameworks */,
 				C32F975A2E19FA5500EE6091 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +67,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C32F97682E19FA9B00EE6091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32F97692E19FA9B00EE6091 /* MyHaskellLib.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -55,6 +85,7 @@
 				C32F97552E19FA5500EE6091 /* Sources */,
 				C32F97562E19FA5500EE6091 /* Frameworks */,
 				C32F97572E19FA5500EE6091 /* Resources */,
+				C32F976C2E19FA9B00EE6091 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
